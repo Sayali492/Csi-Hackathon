@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>CSI HACKATHON website</title>
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+          <link href="https://fonts.googleapis.com/css?family=Merienda|Roboto" rel="stylesheet">
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+                    rel="stylesheet">
+          <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+          <link rel="stylesheet" href="navbar.css">
+          <link rel="stylesheet" href="index.css">
+
+          <link rel="stylesheet" href="hackathon.css" />
+          <link rel="shortcut icon" href="images/favicon.png" />
+          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+          <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap"
+                    rel="stylesheet">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script src="https://code.jquery.com/jquery-3.6.0.js"
+                    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+          <style>
+                    /* body {
+  background-color: #fefefe;
+  margin-top : 100px;
+  margin-left : 100px;
+  margin-bottom : 100px;
+} */
+
+                    .gradientCard {
+                              border-radius: 16px;
+                              padding: 20px;
+                              font-size: 16px;
+                              line-height: 1.7em;
+                              font-family:Arial, Helvetica, sans-serif;
+                              transition: 0.5s;
+                              text-align: left;
+                              margin-bottom: 70px;
+                              margin-left: 77px;
+                              background-size: 200% 200%;
+                              box-shadow: 0 16px 20px 8px rgba(0, 0, 0, 0.2);
+                              color: #000000;
+                              width: 600px;
+                    }
+
+                    @media screen and (min-width: 1080px) {
+                              .gradientCard:hover {
+                                        background-position: bottom right;
+                                        box-shadow: 0 20px 32px 0 rgba(0, 0, 0, 0.4);
+                              }
+                    }
+
+                    .middle {
+                              width: 60%;
+                              float: left;
+                    }
+          </style>
+
+</head>
+<section class="header">
+
+          <nav id="top">
+                    <a href="http://csi-india.org.in/">
+                              <img class="logo" style="width:55px;" src="images/csi-logo.png">
+                              </img></a>
+                    <a href="#">
+                              <img class="logo" style="width:55px;margin-left:30px" src="images/coep.png">
+                              </img></a>
+                    </a>
+                    <div class="navitems" id="navlinks">
+                              <i class="fa fa-times" id="times" onclick="hideMenu();"></i>
+                              <ul>
+                                        <li><a href="homePage.html">HOME</a></li>
+                                        <li><a href="#">ABOUT</a></li>
+                                        <li><a href="#">PROBLEMS</a></li>
+                                        <li><a href="rules.html">RULES</a></li>
+                                        <li><a href="Contact.html">CONTACT</a></li>
+
+
+
+                              </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="ShowMenu();" id="ham"></i>
+          </nav>
+          <section id="hero">
+                    <div class="intro">
+                              <i class="fa fa-code" aria-hidden="true"></i>
+                              <h1> <span>Rules</span></h1>
+                              <!-- <p><br /> <br /></p> -->
+                              <i class="fa fa-code" aria-hidden="true"></i>
+                    </div>
+          </section>
+          <!--// end #hero -->
+
+
+          <body>
+                    <div class="gradientCard"
+                              style="background-image: linear-gradient(to bottom right, #64B5F6 0%, #69F0AE, #64B5F6 100%);">
+                              <!-- <center><b><u>About Car Races</u></b></center> -->
+                              <p>
+
+
+                              <ul>
+                                        <li>Teams will be given 5 problem statements to choose from and develop a
+                                                  solution in the 24-hour time period.
+                                                  The solution may consist of a desktop app, web app, mobile app, data
+                                                  visualization or a design prototype.</li>
+                                        <br>
+                                        <li>Participants should develop an application of their choice to best fit the
+                                                  solution of the given problem
+                                                  statement. Mentors will be present at the location to help the teams
+                                                  and to check on what the teams are
+                                                  developing for some period of the Hackathon</li>
+                                        <br>
+                                        <li>Every team will have to explain their product individually to our mentors
+                                                  roaming around and will have to
+                                                  give a final presentation to our judging panel, out of which the
+                                                  winner will be chosen</li>
+                                        <br>
+                                        <li>Rules may be changed without prior intimation. Participants are requested to
+                                                  check the official
+                                                  MindSpark'21 website (www.mind-spark.org) regularly for updates.</li>
+                                        <br>
+                                        <li>Winners will be chosen solely on discretion. In case of any disputes, the
+                                                  decision of the organizers and
+                                                  the judges will be final and binding to all</li>
+
+
+                              </ul>
+                              </p>
+                    </div>
+          </body>
+
+
+
+          </div>
+          <canvas class="background"></canvas>
+          <script src="https://npmcdn.com/particlesjs@2.0.2/dist/particles.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          <script
+                    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+          <script src="index.js"></script>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script src="https://code.jquery.com/jquery-3.6.0.js"
+                    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+          </script>
+          <script>
+
+
+                    let navlink = document.querySelector('#navlinks');
+
+                    function ShowMenu() {
+                              navlink.style.display = 'block';
+                    }
+                    function hideMenu() {
+                              navlink.style.display = 'none';
+                              /*let but=document.querySelector('.arrow_up');
+                              but.click();*/
+                    }
+
+                    function myFunction(x) {
+                              if (!x.matches) { // If media query matches
+                                        navlink.style.display = 'block';
+                              }
+                    }
+
+                    var x = window.matchMedia("(max-width: 767px)")
+                    myFunction(x) // Call listener function at run time
+                    x.addListener(myFunction) // Attach listener function on state changes
+
+                    /*function LoadPage(url) {
+                      console.log("Loading " + url);
+                      $('#maincontent').load(url);
+                    }*/
+
+
+                    /* AOS.init({
+                       offset: 0, 
+                      delay: 10, 
+                      duration: 1000
+                
+                     });*/
+
+
+
+          </script>
+          </body>
+
+</html>
